@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dhmi type="pushrequest">
+	<appid>{$appid}</appid>
+	<mkeyuserid></mkeyuserid>
+	<show>{$show}</show>
+	<style>{$style}</style>
+	<priority>{$priority}</priority>
+	<buttonStyle>{$buttonStyle}</buttonStyle>
+	<userid>4028801e26e934e60126e93ffa810003</userid>
+	<username>{$username}</username>
+	<dipush count="5"></dipush>
+	<catalog name="新闻">application.gohome();</catalog>
+	<title>{$title}</title>
+</dhmi>
