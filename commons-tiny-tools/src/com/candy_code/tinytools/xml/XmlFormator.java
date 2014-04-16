@@ -9,8 +9,22 @@ import org.dom4j.DocumentHelper;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
 
+import com.candy_code.tinytools.shell.UnixExecutor;
+
+/**
+ * Description: XmlFormator is used to format the messy xml to be tidy.It will use a fixed format.
+ * XmlFormator depends on dom4j library.
+ * @version 1.0  Apr 16, 2014 1:42:37 PM create by Candy Code(CandyCodeJ@gmail.com)
+ */
 public class XmlFormator
 {
+	/**
+	 * Description: format a org.dom4j.Document object to a tidy xml string. 
+	 * @Version1.0 Apr 16, 2014 1:51:10 PM create by Candy Code (CandyCodeJ@gmail.com)
+	 * @param doc
+	 * @return
+	 * @throws Exception
+	 */
 	public static String format(Document doc) throws Exception
 	{
 		StringWriter out = null;
@@ -29,6 +43,13 @@ public class XmlFormator
 		}
 		return out.toString();
 	}
+	/**
+	 * Description: format a xml string to a tidy xml string. 
+	 * @Version1.0 Apr 16, 2014 1:52:22 PM create by Candy Code (CandyCodeJ@gmail.com)
+	 * @param str
+	 * @return
+	 * @throws Exception
+	 */
 	public static String format(String str) throws Exception
 	{
 		StringWriter out = null;
@@ -59,9 +80,5 @@ public class XmlFormator
 			}
 		}
 		return out.toString();
-	}
-	public static void main(String[] args) throws Exception
-	{
-		System.out.println(format("<msc><input/></msc>"));
 	}
 }
